@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +19,12 @@
 </head>
 
 <body>
+  <div class="overlay"></div>
   <header class="header">
-    <div class="header__top">
+    <a class="burger" href="#">
+      <span></span>
+    </a>
+    <div class="header__top ">
       <div class="container">
         <div class="header__top-inner">
           <a class="header__logo logo" href="#">
@@ -98,15 +103,15 @@
             </div>
             <span class="service__text">Quick service</span>
           </div>
-          <div class="rating">
-            <div class="rating__item">
-              <div class="rating__number">4.5/5</div>
-              <div class="rating__text">Rating</div>
-            </div>
-            <div class="rateYo"></div>
-          </div>
           <div class="header__slider">
             <img class="header__img" src="images/header-slider.jpg" alt="">
+            <div class="rating">
+              <div class="rating__text">
+                <p class="header__text-1">4.5/5</p>
+                <p class="header__text-2">Rating</p>
+              </div>
+              <div class="rateyo"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -835,6 +840,7 @@
       </div>
       <div class="map__img"></div>
     </section>
+      
   </main>
   <footer class="footer">
     <div class="footer__content">
@@ -919,7 +925,7 @@
     </div>
   </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
